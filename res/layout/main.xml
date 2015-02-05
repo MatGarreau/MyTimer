@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1" >
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvInputDuration"
+            android:id="@+id/tvInputDuration"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="30sp"
+            android:layout_marginTop="30sp"/>
+
+
+    <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/npDuration"
+            android:layout_gravity="center_horizontal"/>
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:id="@+id/btStart"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30sp"
+            android:layout_marginTop="30sp"/>
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvCdTimer"
+            android:id="@+id/tvCdTimer"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="30sp"
+            android:layout_marginTop="30sp" android:textSize="@dimen/bigSize"/>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repeat"
+            android:id="@+id/cbRepeat" android:layout_gravity="center_horizontal"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/nbRepeat"
+            android:layout_gravity="right"
+            android:hint="00"/>
+</LinearLayout>
+
